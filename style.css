@@ -119,3 +119,26 @@ home.button {
   line-height: 50px;
   cursor: pointer;
 }
+
+#formQuestions {
+  text-align: center;
+}
+
+#providerList {
+  display: none;
+  justify-content: space-evenly;
+}
+
+.provider {
+  border: 10px yellow solid;
+  width: 25%;
+  text-align: center;
+}
+
+#title {
+  display: none;
+  text-align: center;
+  background-color: aliceblue;
+  color: black;
+  margin-bottom: 50px;
+}
