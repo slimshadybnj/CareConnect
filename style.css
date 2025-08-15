@@ -3,8 +3,38 @@
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #0a1626;
     color: #e0e6ed; */
+/* Balls background canvas */
+#balls-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    background: transparent;
+}
 
+body > *:not(#balls-canvas) {
+    position: relative;
+    z-index: 1;
+}
 
+a {
+  font-size: 50px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0a1626;
+    color: #e0e6ed;
+}
+
+img {
+  width: 10vw;
+
+}
 
  .navbar {
     display: flex;
@@ -141,4 +171,20 @@ home.button {
   background-color: aliceblue;
   color: black;
   margin-bottom: 50px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 20%;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #005fa3;
 }
